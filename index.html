@@ -4,118 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./">
+    <link rel="stylesheet" href="./Estilos/style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar" class="navbar">
+        <img class="logo" src="./Images/daisy.png" alt="Margarita">
         <div class="menu">
-            <ul class="roles">
-                <li>Product Owner</li>
-                <li>Bussiness Analyst</li>
-                <li>Scrum Master</li>
-                <li>Equipo Tecnico</li>
+            <ul class="links">
+                <li><a href="#equipoAgile">Equipo Agile</a></li>
+                <li><a href="#artefactos">Artefactos</a></li>
+                <li><a href="#ceremonias">Ceremonias</a></li>
+                <li><a href="#roles">Roles</a></li>
             </ul>
         </div>
-        <h1>Equipo Agile (Srum)</h1>
     </nav>
-    <img src="Images/Scrum-Process_Articulo_Semana-32_2022_1-2048x1024.jpg" alt="">
+    <h1>Equipo Agile (Srum)</h1>
 
-    <h2>Que es un equipo Agile?</h2>
-    <p>Es un grupo de personas con un fin en comun, que perimite la gestin de proyectos de forma agil,
-        ellos pueden auto organizarse mientras abordan problemas, pueden aprender mediante experiencias y
-        puedes recapacitar sobre sos logros y errores para una mejora continua. Aporta a los trabajadores 
-        un conjunto de herramientas, reunuines y funciones que facilitan la estructuracion, coordinacion y gestion del trabajo.</p>
-    
-    <h2>Ceremonias</h2>
-    <ul>
-        <li>
-            <h3>Daily meeting</h3>
-            <p>ES una reunion en la que cada miembro del equipo da novedades sobre en lo que estuvo trabajando y en lo que va a trabajara en el dia</p>
-        </li>
-        <li>
-            <h3>Sprint Plannign</h3>
-            <p>Es una reunion en la que el equipo coordina y planifica que tareas se van a tomar durante el siguiente sprint</p>
-        </li>
-        <li>
-            <h3>Planificacion tactica</h3>
-            <p>Es una lista con las tareas que se deben hacer durante el sprint actual para ver en que 
-                tareas el equipo esta teniendo dificultades y tomar desiciones al respecto</p>
-        </li>
-        <li>
-            <h3>Refinamiento</h3>
-            <p>Es una reorganizacion del product backlog, se hace en colaboracion con el equipo de desarrollo y el product owner</p>
-        </li>
-        <li>
-            <h3>Sprint Review</h3>
-            <p>Es una reunion que se realiza al finalizar un sprint para evaluar los resultados del equipo </p>
-        </li>
-        <li>
-            <h3>Retrospectiva</h3>
-            <p>Es una reunion post review para analizar que salio bien y que podria mejorarse para el siguiente sprint</p>
-        </li>
-    </ul>
-
-    <h2 class="roles">Roles</h2>
-    <div class="rol-PO">
-        <h3>Product Owner</h3>
-        <p>Esta encorgado de optimizar y maximizar el valor del producto, tambien se encarga de gestionar el Product Backlog.
-            Es fundamental que el PO(Product Owner) tenga los privilegios y los permisos necesarios para tomar cualquier desicion respecto al producto</p>
+    <div class="banner">
+        <img src="Images/Scrum-Process_Articulo_Semana-32_2022_1-2048x1024.jpg" alt="">
     </div>
 
-    <div class="rol-BA">
-        <h3>Bussiness Analyst</h3>
-        <p>Es la persona encargada de entender el modelo de negocio, el plan estrategico y de operaciones de la organizacion 
-            y traducirlo en requerimientos tegnicos y funcionales concretos</p>
-    </div>
+    <section class="card">
 
-    <div class="rol-SM">
-        <h3>SCRUM Master</h3>
-        <p>Lider que ayuda al equipo y a la organizacion a utilizar la metodologia SCRUM, se focaliza en la parte de negocio y sus fondos</p>
-    </div>
+        <h2 id="equipoAgile">Que es un equipo Agile?</h2>
+        <p>Es un grupo de personas con un fin en comun, que perimite la gestin de proyectos de forma agil,
+            ellos pueden auto organizarse mientras abordan problemas, pueden aprender mediante experiencias y
+            puedes recapacitar sobre sos logros y errores para una mejora continua. Aporta a los trabajadores
+            un conjunto de herramientas, reunuines y funciones que facilitan la estructuracion, coordinacion y gestion
+            del trabajo.</p>
 
-    <div class="rol-ET">
-        <h3>Equipo Tecnico</h3>
-        <p>El euqipo tecnico esta formado por integrantes especializador los cuales son:</p>
+    </section>
+
+    <section class="card">
+        <h2 id="artefactos">Artefactos</h2>
+
+        <h3>Product backlog</h3>
+        <p>Es una lista de tareas que deben realizarse para el desarrollo del producto. Por lo general es mantenido y
+            ordenado por el/los Product Owners, quienes a su vez dan prioridad a dichas tareas para determinar el orden
+            y tiempos en los que deben ser completadas</p>
+
+        <h3>Sprint backlog</h3>
+        <p>
+            Es la lista de tareas pertenecientes al product backlog que seran tomadas en un sprint determinado 
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2 id="ceremonias">Ceremonias</h2>
         <ul>
-            <li>Technical leader</li>
-            <li>Desarrollador FrontEnd</li>
-            <li>Desarrollador BackEnd</li>
-            <li>Administrador de Base de Datos</li>
-            <li>Tester QA Manual</li>
-            <li>Seguridad informatica</li>
-
+            <li>
+                <h3>Daily meeting</h3>
+                <p>Es una reunion en la que cada miembro del equipo da novedades sobre en lo que estuvo trabajando y en
+                    lo que va a trabajara en el dia</p>
+            </li>
+            <li>
+                <h3>Sprint Plannign</h3>
+                <p>Es una reunion en la que el equipo coordina y planifica que tareas se van a tomar durante el
+                    siguiente sprint</p>
+            </li>
+            <li>
+                <h3>Planificacion tactica</h3>
+                <p>Es una lista con las tareas que se deben hacer durante el sprint actual para ver en que
+                    tareas el equipo esta teniendo dificultades y tomar desiciones al respecto</p>
+            </li>
+            <li>
+                <h3>Refinamiento</h3>
+                <p>Es una reorganizacion del product backlog, se hace en colaboracion con el equipo de desarrollo y el
+                    product owner</p>
+            </li>
+            <li>
+                <h3>Sprint Review</h3>
+                <p>Es una reunion que se realiza al finalizar un sprint para evaluar los resultados del equipo </p>
+            </li>
+            <li>
+                <h3>Retrospectiva</h3>
+                <p>Es una reunion post review para analizar que salio bien y que podria mejorarse para el siguiente
+                    sprint</p>
+            </li>
         </ul>
-        <div class="subRoles">
-            <h4>Technical leader</h4>
-            <p>Es quien esta a cargo del equipo de desarrollo y el encargado de que el producto cumpla con la calidad tecnica requerida</p>
 
-            <h4>Desarrollador ForntEnd</h4>
-            <p>Es el encargado de programar el navegador de una web para que una web sea atractiva para el usuario y a la vez funcione correctamente</p>
+    </section>
 
-            <h4>Desarrollador BackEnd</h4>
-            <p>Es el encargado de trabajar con el servidor y de la arquitectura interna de una pagina web</p>
 
-            <h4>Administrador de Base de Datos</h4>
-            <p>Es el encargado de Crear, Manipular y mantener las bases de datos relacionadas a la pagina web</p>
+    <section class="card">
 
-            <h4>Tester QA Manual</h4>
-            <p>Se encarga de buscar problemas y errores en la pagina web o aplicacion antes de que esta salga al mercado, 
-                tambien ayuda a los desarrolladores a buscar una solucion.  
-                Las pruebas que un Tester QA Manual puede hacer son de funcionalidad, usabilidad, rendimiento y compatibilidad.
-                El trabajo de un Tester QA Manual es importante ya que ayudan a garantizar la calidad de la pagina y/o aplicacion y que esta sea segura, 
-                confiable y facil de usar para los usuarios.
-                Para ser un Tester QA Manual se requieren tanto habilidades tecnicas como no tecnicas;
-                las habilidades tecnicas incluyen conocimiento en programacion, base da datos y sistemas operativos, y las no tecnicas incliyen habilidades de comunicacion, analitica y habilidades para trabajar en grupo
-            </p>
-
-            <h4>Seguridad informatica</h4>
-            <p>Se encarga de buscar y solucionar cualquier vulnerabilidad de la pagina o aplicacion ante ataques maliciosos</p>
+        <h2 id="roles">Roles</h2>
+        <div class="rol-PO">
+            <h3>Product Owner</h3>
+            <p>Esta encorgado de optimizar y maximizar el valor del producto, tambien se encarga de gestionar el Product
+                Backlog.
+                Es fundamental que el PO(Product Owner) tenga los privilegios y los permisos necesarios para tomar
+                cualquier
+                desicion respecto al producto</p>
         </div>
-    </div>
-    
-    
+
+        <div class="rol-BA">
+            <h3>Bussiness Analyst</h3>
+            <p>Es la persona encargada de entender el modelo de negocio, el plan estrategico y de operaciones de la
+                organizacion
+                y traducirlo en requerimientos tegnicos y funcionales concretos</p>
+        </div>
+
+        <div class="rol-SM">
+            <h3>SCRUM Master</h3>
+            <p>Lider que ayuda al equipo y a la organizacion a utilizar la metodologia SCRUM, se focaliza en la parte de
+                negocio y sus fondos</p>
+        </div>
+
+        <div class="rol-ET">
+            <h3>Equipo Tecnico</h3>
+            <p>El equipo tecnico esta formado por integrantes especializados los cuales son:</p>
+            <div class="subRoles">
+                <h4>Technical leader</h4>
+                <p>Es quien esta a cargo del equipo de desarrollo y el encargado de que el producto cumpla con la
+                    calidad
+                    tecnica requerida</p>
+
+                <h4>Desarrollador Fornt-end</h4>
+                <p>Es el encargado de programar el navegador de una web para que una web sea atractiva para el usuario y
+                    a
+                    la vez funcione correctamente</p>
+
+                <h4>Desarrollador Back-end</h4>
+                <p>Es el encargado de trabajar con el servidor y de la arquitectura interna de una pagina web</p>
+
+                <h4>Administrador de Base de Datos</h4>
+                <p>Es el encargado de Crear, Manipular y mantener las bases de datos relacionadas a la pagina web</p>
+
+                <h4>Tester QA Manual</h4>
+                <p>Se encarga de buscar problemas y errores en la pagina web o aplicacion antes de que esta salga al
+                    mercado,
+                    tambien ayuda a los desarrolladores a buscar una solucion.
+                    Las pruebas que un Tester QA Manual puede hacer son de funcionalidad, usabilidad, rendimiento y
+                    compatibilidad.
+                    El trabajo de un Tester QA Manual es importante ya que ayudan a garantizar la calidad de la pagina
+                    y/o
+                    aplicacion y que esta sea segura,
+                    confiable y facil de usar para los usuarios.
+                    Para ser un Tester QA Manual se requieren tanto habilidades tecnicas como no tecnicas;
+                    las habilidades tecnicas incluyen conocimiento en programacion, base da datos y sistemas operativos,
+                    y
+                    las no tecnicas incliyen habilidades de comunicacion, analitica y habilidades para trabajar en grupo
+                </p>
+
+                <h4>Seguridad informatica</h4>
+                <p>Se encarga de buscar y solucionar cualquier vulnerabilidad de la pagina o aplicacion ante ataques
+                    maliciosos</p>
+            </div>
+        </div>
+
+    </section>
+
+    <a id="goTop" href="#navbar">^</a>
 
 </body>
 

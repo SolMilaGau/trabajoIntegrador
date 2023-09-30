@@ -1,7 +1,3 @@
-CREATE DATABASE bicicleteria;
-
-USE bicicleteria;
-
 CREATE TABLE Tipos_de_bicicletas (
   codigo INT PRIMARY KEY,
   descripcion VARCHAR(50) NOT NULL
@@ -31,4 +27,9 @@ CREATE TABLE Clientes (
 INSERT INTO Tipos_de_bicicletas (codigo, descripcion) VALUES
 (1, 'Paseo'),
 (2, 'Montaña'),
-(3, 'Carrera');
+(3, 'Carrera');
+
+SELECT Clientes.nombre, Clientes.apellido, Bicicletas.marca, Bicicletas.modelo, Tipos_de_bicicletas.descripcion
+FROM Clientes
+JOIN Bicicletas ON Clientes.cod_bici = Bicicletas.codigo
+JOIN Tipos_de_bicicletas ON Bicicletas.tipo_bici = Tipos_de_bicicletas.codigo;

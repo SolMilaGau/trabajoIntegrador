@@ -2,6 +2,11 @@ CREATE DATABASE bicicleteria;
 
 USE bicicleteria;
 
+CREATE TABLE Tipos_de_bicicletas (
+  codigo INT PRIMARY KEY,
+  descripcion VARCHAR(50) NOT NULL
+);
+
 CREATE TABLE Bicicletas (
   codigo INT PRIMARY KEY,
   marca VARCHAR(50) NOT NULL,
@@ -10,11 +15,6 @@ CREATE TABLE Bicicletas (
   tipo_bici INT,
   anio_fab INT,
   FOREIGN KEY (tipo_bici) REFERENCES Tipos_de_bicicletas(codigo)
-);
-
-CREATE TABLE Tipos_de_bicicletas (
-  codigo INT PRIMARY KEY,
-  descripcion VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Clientes (
@@ -27,3 +27,8 @@ CREATE TABLE Clientes (
   cod_bici INT,
   FOREIGN KEY (cod_bici) REFERENCES Bicicletas(codigo)
 );
+
+INSERT INTO Tipos_de_bicicletas (codigo, descripcion) VALUES
+(1, 'Paseo'),
+(2, 'Montaña'),
+(3, 'Carrera');
